@@ -10,7 +10,7 @@ namespace MVC_Tasks.Models
         [MinLength(5, ErrorMessage = "The length must be at least 5 chars")]
         [MaxLength(200, ErrorMessage = "The length cannot more than 200 chars.")]
         [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Only Characters are allowed")]
-        [UniqueNameArribute(error ="Change your Name")]
+        [UniqueName(error ="Change your Name")]
         public string Name { get; set; }
         [Display(Name = "Max Degree")]
         [Remote("CheckMaxDegree,Course", ErrorMessage = "Max Degree is not valid")]

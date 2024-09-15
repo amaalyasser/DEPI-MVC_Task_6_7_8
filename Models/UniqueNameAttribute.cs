@@ -2,7 +2,7 @@
 
 namespace MVC_Tasks.Models
 {
-    public class UniqueNameArribute:ValidationAttribute
+    public class UniqueNameAttribute : ValidationAttribute
     {
         public string error { get; set; }
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)

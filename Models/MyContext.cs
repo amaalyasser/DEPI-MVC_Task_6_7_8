@@ -1,9 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System.Collections.Generic;
+using MVC_Tasks.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace MVC_Tasks.Models
 {
-    public class MyContext :DbContext
+    public class MyContext :IdentityDbContext<IdentityUser>
     {
         public MyContext() : base()
         {
@@ -18,8 +21,10 @@ namespace MVC_Tasks.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-5VIT1FL\\MSSQLSERVER02;Initial Catalog=MVC_DB_Tasks;Integrated Security=True;Encrypt=False;");
+            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=Identity_MVC;Integrated Security=True;Encrypt=False;");
             base.OnConfiguring(optionsBuilder);
         }
+        public DbSet<MVC_Tasks.Models.LoginModel> LoginModel { get; set; } = default!;
+        public DbSet<MVC_Tasks.Models.RegisterModel> RegisterModel { get; set; } = default!;
     }
 }

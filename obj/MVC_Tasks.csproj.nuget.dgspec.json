@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amal\\source\\repos\\MVC_Tasks\\MVC_Tasks\\MVC_Tasks.csproj": {}
+    "D:\\DEBI\\Assignment\\MVC_Tasks\\MVC_Tasks\\MVC_Tasks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amal\\source\\repos\\MVC_Tasks\\MVC_Tasks\\MVC_Tasks.csproj": {
+    "D:\\DEBI\\Assignment\\MVC_Tasks\\MVC_Tasks\\MVC_Tasks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amal\\source\\repos\\MVC_Tasks\\MVC_Tasks\\MVC_Tasks.csproj",
+        "projectUniqueName": "D:\\DEBI\\Assignment\\MVC_Tasks\\MVC_Tasks\\MVC_Tasks.csproj",
         "projectName": "MVC_Tasks",
-        "projectPath": "C:\\Users\\Amal\\source\\repos\\MVC_Tasks\\MVC_Tasks\\MVC_Tasks.csproj",
+        "projectPath": "D:\\DEBI\\Assignment\\MVC_Tasks\\MVC_Tasks\\MVC_Tasks.csproj",
         "packagesPath": "C:\\Users\\Amal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amal\\source\\repos\\MVC_Tasks\\MVC_Tasks\\obj\\",
+        "outputPath": "D:\\DEBI\\Assignment\\MVC_Tasks\\MVC_Tasks\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amal\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -58,7 +62,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
